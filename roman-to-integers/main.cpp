@@ -1,6 +1,5 @@
-#include<bits/stdc++.h>
-#include<string>
-#include<iostream>
+#include <bits/stdc++.h>
+#include <string.h>
 using namespace std;
 
 class roman_to_integer {
@@ -72,7 +71,7 @@ int main()
 
         cout<<"Enter the string"<<endl;
         getline(cin,sm);
-        int f= R.romanToInt(sm);
+        int f = R.romanToInt(sm);
         cout<<f<<endl;
         return 0;
 
