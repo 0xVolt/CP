@@ -1,4 +1,4 @@
-## [Entering Romulus](pornhub.com)
+## Entering Romulus
 ---
 #### Problem Statement
 The problem was that ethan is developing a game and it's called entering romulus and the main character playing the game have to enter the tallest building from the array of supplied buildings but he can choose only from n portion of the given length of the array
