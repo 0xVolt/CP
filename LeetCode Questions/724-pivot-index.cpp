@@ -26,7 +26,21 @@ int solve(vector<int> &arr) {
 }
 
 int solve_better(vector<int> &arr) {
-    
+    int index = -1;
+
+    int left_sum = 0;
+    int right_sum = accumulate(arr.begin(), arr.end(), 0);
+
+    for (int i = 0; i < arr.size(); i++) {
+        right_sum -= arr[i];
+
+        if (left_sum == right_sum)
+            return i;
+
+        left_sum += arr[i];
+    }
+
+    return -1;
 }
 
 int main() {
@@ -37,7 +51,7 @@ int main() {
     while (t--) {
         int i = solve_better(in);
         
-        cout << "\nPivot Index: " << i;
+        cout << "Pivot Index: " << i;
     }
 
     return 0;
