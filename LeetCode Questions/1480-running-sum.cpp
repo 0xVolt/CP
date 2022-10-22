@@ -20,13 +20,13 @@ vector<int> solve(vector<int> in) {
 }
 
 // Here's a better solution
-void solve_better(vector<int> in) {
+vector<int> solve_better(vector<int> &in) {
     for(int i = 1; i < in.size(); i++)
         in[i] += in[i - 1];
 
-    for (auto i : in) {
-        cout << i << " ";
-    }
+    // for (auto i : in) {
+    //     cout << i << " ";
+    // }
 }
 
 int main() {
@@ -36,6 +36,10 @@ int main() {
 
     while (t--) {
         solve_better(in);
+        
+        for (auto i : in) {
+            cout << i << " ";
+        }
     }
 
     return 0;

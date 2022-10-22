@@ -28,13 +28,17 @@ void define_iterator(vector<int> arr) {
     cout << endl;
 }
 
-// Iterating through a vector using an iterator and the auto keyword
-void define_iterator_pro(vector<int> arr) {
+// Iterating through a vector using an iterator and the auto keyword. We're returning something from this function to prove that vectors are passed by value.
+vector<int> define_iterator_pro(vector<int> arr) {
     for (auto i : arr) {
         cout << i << " ";
     }
 
     cout << endl;
+
+    vector<int> arr_ret = {100, 200, 300};
+
+    return arr_ret;
 }
 
 int main() {
@@ -42,7 +46,7 @@ int main() {
 
     // declare_var(arr);
     // define_iterator(arr);
-    define_iterator_pro(arr);
+    vector<int> out = define_iterator_pro(arr);
 
     return 0;
 }
