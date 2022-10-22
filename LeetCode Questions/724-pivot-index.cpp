@@ -1,3 +1,6 @@
+// The right approach could take an insane amount of time to implement. Make the best use of built-in functions,
+// whenever possible. Also, note the order in which we update the left and right values after we check for an equality.
+
 #include <bits/stdc++.h>
 using namespace std;
 
