@@ -19,7 +19,7 @@ int main() {
 
     // Alternatively,
     cout << "Current index: " << it - arr.begin();
-    
+
 
     return 0;
 }
