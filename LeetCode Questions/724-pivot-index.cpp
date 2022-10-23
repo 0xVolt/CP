@@ -53,7 +53,7 @@ int main() {
 
     while (t--) {
         int i = solve_better(in);
-        
+
         cout << "Pivot Index: " << i;
     }
 
