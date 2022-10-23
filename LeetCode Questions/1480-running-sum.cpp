@@ -36,7 +36,7 @@ int main() {
 
     while (t--) {
         solve_better(in);
-        
+
         for (auto i : in) {
             cout << i << " ";
         }
