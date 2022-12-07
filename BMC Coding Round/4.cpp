@@ -1,12 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int processArray(vector<int> array) {
-    for (auto i = array.begin(); i != array.end(); i++) {
-        if (*i < 10 && *(i + 1) < 10) {
+int processArray(vector<int> array)
+{
+    for (auto i = array.begin(); i != array.end(); i++)
+    {
+        if (*i < 10 && *(i + 1) < 10)
+        {
             auto j = i;
 
-            while(*(++j) < 10) {
+            while (*(++j) < 10)
+            {
                 *i = *j;
                 array.erase(j--);
             }
@@ -16,7 +20,8 @@ int processArray(vector<int> array) {
     }
 
     int count = 0;
-    for (auto i = array.begin(); i != array.end(); i++) {
+    for (auto i = array.begin(); i != array.end(); i++)
+    {
         cout << *i << endl;
         count++;
     }
@@ -24,7 +29,8 @@ int processArray(vector<int> array) {
     return count;
 }
 
-int main() {
+int main()
+{
     vector<int> array = {222, 3, 5, 62, 124, 1, 9, 5, 66, 7};
 
     int len = processArray(array);
