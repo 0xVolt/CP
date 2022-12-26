@@ -3,13 +3,15 @@
 // This code is case sensitive. I.e., 'e' and 'E' are treated differently.
 
 #include <bits/stdc++.h>
+
 using namespace std;
 
 // Function prototypes
 bool checkAnagrams(string, string);
 unordered_map<char, int> createMap(string);
 
-int main() {
+int main()
+{
     string s1, s2;
 
     cout << "String 1: ";
@@ -28,11 +30,13 @@ int main() {
 }
 
 // Function to check whether the given strings are anagrams or not
-bool checkAnagrams(string a, string b) {
+bool checkAnagrams(string a, string b)
+{
     // Are they the same length?
     if (a.length() != b.length())
         return false;
-    else {
+    else
+    {
         int len = a.length();
 
         // Creating two hash maps using a defined function
@@ -56,12 +60,14 @@ bool checkAnagrams(string a, string b) {
 }
 
 // Function to create a hash map of a string's characters and return it
-unordered_map<char, int> createMap(string A) {
+unordered_map<char, int> createMap(string A)
+{
     int len = A.length();
     unordered_map<char, int> ret;
 
     // Traverse the string
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len; i++)
+    {
         // Increment index
         ret[A[i]]++;
     }
