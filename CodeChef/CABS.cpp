@@ -13,9 +13,9 @@ int main() {
 
         cin >> X >> Y;
         
-        if (X > Y) {
+        if (X < Y) {
             cout << "FIRST";
-        } else if (X < Y)  
+        } else if (X > Y)  
             cout << "SECOND";
         else
             cout << "ANY";
