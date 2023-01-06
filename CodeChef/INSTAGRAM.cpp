@@ -15,7 +15,7 @@ int main() {
 
         if (x > (10 * y)) {
             cout << "YES";
-        } else 
+        } else
             cout << "NO";
 
         cout << "\n";
